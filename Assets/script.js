@@ -1,10 +1,4 @@
 
-var today = new Date();
-var myToday = new Date(today.getFullYear(), today.getMonth(), today.getDate(), today.getHours(), today.getMinutes(), today.getSeconds());
-console.log(myToday);
-
-
-
 var dateObj = 
     [
         {
@@ -49,19 +43,16 @@ var dateObj =
         }
     ]
 
-    render()
+render()
 
 var theTime = today.getHours();
 
 var workStart = 8;
 var workEnd = 17;
 
-console.log(theTime);
 
 for (var i = workStart; i <= workEnd; i++)
 {
-    
-    console.log(i);
 
     if (i < theTime)
     {
@@ -111,7 +102,6 @@ $('.btn').click(function()
             if (value.time == spanID) 
                 {
                     value.plan = textfieldContent;
-                    console.log(value.plan);
                 }
             });
         }
