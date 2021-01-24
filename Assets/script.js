@@ -45,6 +45,7 @@ var dateObj =
 
 render()
 
+var today = new Date();
 var theTime = today.getHours();
 
 var workStart = 8;
