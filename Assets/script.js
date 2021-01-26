@@ -46,6 +46,10 @@ var dateObj =
 render()
 
 var today = new Date();
+
+var dateDisplay = moment().format('MM/DD/YYYY')
+$('#currentDay').text(dateDisplay);
+
 var theTime = today.getHours();
 
 var workStart = 8;
@@ -93,7 +97,8 @@ $('.btn').click(function()
 
        if (localStorage.getItem("dateObj") === null) 
         {
-        
+            localStorage.setItem('dateObj', JSON.stringify(dateObj));            
+            render();
         }
 
         else
